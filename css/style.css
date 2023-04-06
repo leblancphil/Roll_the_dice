@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+body {
+    background-color: #224e0a7b;
+    font-family: 'Lato', sans-serif;
+}
+
+#player_score_player_one,
+#player_score_player_two {
+    font-size: 5em;
+    color: #530b1998;
+}
+
+#round_score_player_one,
+#round_score_player_two {
+
+
+    background-color: #530b1998;
+    text-align: center
+}
+
+#round_score_player_one :first-child,
+#round_score_player_two :first-child {
+    padding: 0px 10px 0px 10px;
+    font-size: 1em;
+    color: 224e0a7b;
+}
+
+#round_score_player_one :nth-child(even),
+#round_score_player_two :nth-child(even) {
+    font-size: 3em;
+    color: white;
+    line-height: 0.8em
+}
+
+
+.active {
+    background-color: #4b7d3084
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #e5d6a4;
+    color: #b73800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #b7ab85;
+    color: #b73800;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .player {
+        height: 30%;
+
+    }
+
+    .play {
+        top: 70%
+    }
+
+    #round_score_player_one :nth-child(even),
+    #round_score_player_two :nth-child(even) {
+        font-size: 1.2em;
+        line-height: 0.5em
+    }
+
+    #player_score_player_one,
+    #player_score_player_two {
+        font-size: 3em;
+        color: #530b1998;
+    }
+
+    #player_two {
+        position: absolute;
+        top: 35%
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .player {
+        height: 100%;
+    }
+
+    .play {
+        top: 50%
+    }
+}

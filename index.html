@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll the dice !</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+  </head>
+
+  <body>
+    <div id="dice_game" class="container-fluid vh-100 ">
+      <div class="row  position-relative vh-100">
+        <div id="player_one" class="player col-sm-12 col-md-6 d-flex flex-column  align-items-center">
+          <h1>Player One</h1>
+          <div id="player_score_player_one">0</div>
+          <div id="round_score_player_one">
+            <p>CURRENT</p>
+            <p class="score_temp">0</p>
+          </div>
+        </div>
+        <div class="play position-absolute container-md">
+          <div class="row justify-content-center">
+            <div id="dice" class="col-3 d-flex justify-content-center mb-3"><img src="images/0.png" alt="dice"></div>
+            <div class="col-12 d-flex justify-content-center">
+              <button class="button btn  m-1" id="dice-button">Roll</button>
+              <button class="button p-1 m-1 btn " id="hold-button">Hold</button>
+              <button class="button p-1 m-1 btn " id="reset-button">New game</button>
+            </div>
+          </div>
+        </div>
+        <div id="player_two" class="player col-sm-12 col-md-6 d-flex flex-column  align-items-center">
+          <h1>Player Two</h1>
+          <div id="player_score_player_two">0</div>
+          <div id="round_score_player_two">
+            <p>CURRENT</p>
+            <p class="score_temp">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
