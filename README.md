@@ -1,2 +1,2 @@
 # Roll_the_dice
-An exercice from stui school
+An exercice from studi school
